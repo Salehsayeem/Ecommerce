@@ -1,0 +1,9 @@
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\bin\Debug\netcoreapp3.1\Ecommerce.DataAccess.deps.json
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\bin\Debug\netcoreapp3.1\Ecommerce.DataAccess.dll
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\bin\Debug\netcoreapp3.1\Ecommerce.DataAccess.pdb
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.csprojAssemblyReference.cache
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.AssemblyInfoInputs.cache
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.AssemblyInfo.cs
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.dll
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.pdb
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.csproj.CoreCompileInputs.cache
