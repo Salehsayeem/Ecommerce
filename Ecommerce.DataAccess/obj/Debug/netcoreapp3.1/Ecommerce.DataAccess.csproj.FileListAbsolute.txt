@@ -6,4 +6,7 @@ G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.AssemblyInfo.cs
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.dll
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.pdb
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\bin\Debug\netcoreapp3.1\Ecommerce.Model.dll
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\bin\Debug\netcoreapp3.1\Ecommerce.Model.pdb
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.csproj.CopyComplete
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.DataAccess\obj\Debug\netcoreapp3.1\Ecommerce.DataAccess.csproj.CoreCompileInputs.cache

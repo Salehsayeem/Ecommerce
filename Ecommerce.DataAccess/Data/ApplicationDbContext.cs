@@ -1,4 +1,5 @@
 ﻿
+using Ecommerce.Model;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,5 +11,6 @@ namespace Ecommerce.DataAccess.Data
             : base(options)
         {
         }
+        public DbSet<Category> Category { get; set; }
     }
 }

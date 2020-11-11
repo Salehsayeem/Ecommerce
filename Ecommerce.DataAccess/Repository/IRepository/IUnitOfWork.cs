@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Ecommerce.DataAccess.Repository.IRepository
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork :IDisposable
     {
+        ICategoryRepository category { get; }
+        void save();
     }
 }

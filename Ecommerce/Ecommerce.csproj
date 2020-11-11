@@ -19,12 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
+    <ProjectReference Include="..\Ecommerce.DataAccess\Ecommerce.DataAccess.csproj" />
+    <ProjectReference Include="..\Ecommerce.Model\Ecommerce.Model.csproj" />
+    <ProjectReference Include="..\Ecommerce.Utility\Ecommerce.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ecommerce.DataAccess\Ecommerce.DataAccess.csproj" />
-    <ProjectReference Include="..\Ecommerce.Model\Ecommerce.Model.csproj" />
+    <Folder Include="wwwroot\images\services\" />
   </ItemGroup>
 
 </Project>

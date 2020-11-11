@@ -4,6 +4,6 @@ G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\bin\Debug\netcoreapp3.1\Eco
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\obj\Debug\netcoreapp3.1\Ecommerce.Utility.csprojAssemblyReference.cache
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\obj\Debug\netcoreapp3.1\Ecommerce.Utility.AssemblyInfoInputs.cache
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\obj\Debug\netcoreapp3.1\Ecommerce.Utility.AssemblyInfo.cs
-G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\obj\Debug\netcoreapp3.1\Ecommerce.Utility.csproj.CoreCompileInputs.cache
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\obj\Debug\netcoreapp3.1\Ecommerce.Utility.dll
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\obj\Debug\netcoreapp3.1\Ecommerce.Utility.pdb
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce.Utility\obj\Debug\netcoreapp3.1\Ecommerce.Utility.csproj.CoreCompileInputs.cache

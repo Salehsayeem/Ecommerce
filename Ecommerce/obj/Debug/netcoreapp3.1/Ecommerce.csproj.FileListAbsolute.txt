@@ -441,3 +441,9 @@ G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\Ecommerce.D
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\Ecommerce.Model.dll
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\Ecommerce.DataAccess.pdb
 G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\Ecommerce.Model.pdb
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\Ecommerce.Utility.dll
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\Ecommerce.Utility.pdb
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Upsert.cshtml.g.cs
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateAndBackToListButton.cshtml.g.cs
+G:\Practice\ASP.Net Core\Ecommerce\Ecommerce\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_EditAndBackToListButton.cshtml.g.cs

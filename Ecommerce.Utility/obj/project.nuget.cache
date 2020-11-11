@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "5584m8H0d52PKWEdr60KMKboi5B868OSQcotqJTdHcqXPnUbCF8cn+cw3g8J1DJ9qlltoNktVP176Ixfq0lDUA==",
+  "dgSpecHash": "Clo/KyekCqdZieJhoC4KRqZpCOD3aw2yHe78mMHGEUMtmLe1A9i1EcpDFkUeEAEuV6UmFQL9PPsRbT5Km30Dfg==",
   "success": true,
   "projectFilePath": "G:\\Practice\\ASP.Net Core\\Ecommerce\\Ecommerce.Utility\\Ecommerce.Utility.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.9\\microsoft.aspnetcore.cryptography.internal.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.9\\microsoft.aspnetcore.cryptography.keyderivation.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.9\\microsoft.aspnetcore.identity.ui.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.9\\microsoft.extensions.caching.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.9\\microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.9\\microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.9\\microsoft.extensions.fileproviders.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\3.1.9\\microsoft.extensions.fileproviders.embedded.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.9\\microsoft.extensions.identity.core.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.9\\microsoft.extensions.identity.stores.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.logging\\3.1.9\\microsoft.extensions.logging.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\saleh\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
