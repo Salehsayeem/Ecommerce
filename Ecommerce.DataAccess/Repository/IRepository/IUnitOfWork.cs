@@ -7,6 +7,7 @@ namespace Ecommerce.DataAccess.Repository.IRepository
     public interface IUnitOfWork :IDisposable
     {
         ICategoryRepository category { get; }
+        IFrequencyRepository frequency { get; }
         void save();
     }
 }
