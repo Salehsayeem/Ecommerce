@@ -8,6 +8,7 @@ namespace Ecommerce.DataAccess.Repository.IRepository
     {
         ICategoryRepository category { get; }
         IFrequencyRepository frequency { get; }
+        IServiceRepository service { get; }
         void save();
     }
 }

@@ -14,10 +14,12 @@ namespace Ecommerce.DataAccess.Repository
             _db = db;
             category = new CategoryRepository(_db);
             frequency = new FrequencyRepository(_db);
+            service = new ServiceRepository(_db);
         }
         public ICategoryRepository category { get; private set; }
 
         public IFrequencyRepository frequency { get; private set; }
+        public IServiceRepository service { get; private set; }
 
         public void Dispose()
         {
