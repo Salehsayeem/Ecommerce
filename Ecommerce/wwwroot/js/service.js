@@ -43,32 +43,29 @@ function loadDataTable() {
 
 function Delete(url) {
     swal({
-        title: "Are you sure ,you want to delete?",
-        text: "You won't be able to restore the content",
+        title: "Are you sure want to Delete?",
+        text: "You will not be able to restore the file!",
         type: "warning",
         showCancelButton: true,
-        confirmButtonColor: "red",
-        confirmButtonText: "Yes, Delete It",
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Yes, delete it!",
         closeOnConfirm: true
-    },
-        function () {
-            $.ajax({
-                type: 'DELETE',
-                url: url,
-                success: function (data) {
-                    if (data.success) {
-                        ShowMessage(data.message);
-                        dataTable.ajax.reload();
-                    }
-                    else {
-                        toastr.error(data.message);
-                    }
-                }
-            })
-        }
-    )
-}
+    }, function () {
+        $.ajax({
+            type: 'DELETE',
+            url: url,
+            success: function (data) {
+                if (data.success) {
+                    toastr.success(data.message);
+                    dataTable.ajax.reload();
 
-function ShowMessage(msg) {
+                }
+                else {
+                    toastr.error(data.message);
+                }
+            }
+        });
+    });
+
 
 }
