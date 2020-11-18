@@ -15,11 +15,15 @@ namespace Ecommerce.DataAccess.Repository
             category = new CategoryRepository(_db);
             frequency = new FrequencyRepository(_db);
             service = new ServiceRepository(_db);
+            orderDetail = new OrderDetailRepository(_db);
+            orderHeader = new OrderHeaderRepository(_db);
         }
         public ICategoryRepository category { get; private set; }
 
         public IFrequencyRepository frequency { get; private set; }
         public IServiceRepository service { get; private set; }
+        public IOrderHeaderRepository orderHeader { get; private set; }
+        public IOrderDetailRepository orderDetail { get; private set; }
 
         public void Dispose()
         {

@@ -9,6 +9,8 @@ namespace Ecommerce.DataAccess.Repository.IRepository
         ICategoryRepository category { get; }
         IFrequencyRepository frequency { get; }
         IServiceRepository service { get; }
+        IOrderHeaderRepository orderHeader { get; }
+        IOrderDetailRepository orderDetail { get; }
         void save();
     }
 }

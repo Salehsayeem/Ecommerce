@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Ecommerce.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using Ecommerce.Extensions
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -42,6 +46,26 @@
                             <a class="dropdown-item" asp-area="Admin" asp-controller="Service" asp-action="Index">Service</a>
                         </div>
                     </li>
+                    @if (HttpContextAccessor.HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart) != null)
+                    {
+                        <li style="color:wheat">
+                            <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link text-white">
+                                @{
+                                    var count = HttpContextAccessor.HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart).Count;
+                                }
+                                <i class="fas fa-shopping-cart"></i>&nbsp; (@count)
+                            </a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li style="color:wheat">
+                            <a href="#" class="nav-link text-white">
+                               
+                                <i class="fas fa-shopping-cart"></i>&nbsp; (0)
+                            </a>
+                        </li>
+                    }
                 </ul>
                 <partial name="_LoginPartial" />
             </div>

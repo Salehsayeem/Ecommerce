@@ -1,4 +1,8 @@
 ﻿@model Ecommerce.Model.Service
+@using Ecommerce.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using Ecommerce.Extensions
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -27,7 +31,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 text-center">
-                        <img src="@Model.ImageUrl" style="width:100%" class="rounded"/>
+                        <img src="\@Model.ImageUrl" style="width:100%" class="rounded" />
                     </div>
                 </div>
             </div>
@@ -38,7 +42,26 @@
                     <a asp-action="Index" class="bnt btn-success btn-square form-control btn-lg" style="height:50px">Back To List</a>
                 </div>
                 <div class="col-12 col-md-6 pb-1">
-                    <a asp-action="AddToCart" asp-route-serviceId="@Model.Id" class="bnt btn-primary btn-square form-control btn-lg" style="height:50px">Add To Cart</a>
+                    @{
+                        var addToCartEnabled = true;
+                        if (HttpContextAccessor.HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart) != null)
+                        {
+                            var sessionList = HttpContextAccessor.HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart);
+                            if (sessionList.Contains(Model.Id))
+                            {
+                                addToCartEnabled = false;
+                            }
+                        }
+                    }
+                    @if (addToCartEnabled)
+                    {
+                        <a asp-action="AddToCart" asp-route-serviceId="@Model.Id" class="bnt btn-primary btn-square form-control btn-lg" style="height:50px">Add To Cart</a>
+                    }
+                    else
+                    {
+                        <button class="bnt btn-primary btn-square form-control btn-lg " style="height:50px" disabled>Item in cart</button>
+                    }
+
                 </div>
             </div>
         </div>
