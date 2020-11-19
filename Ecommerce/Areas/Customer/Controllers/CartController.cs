@@ -39,5 +39,70 @@ namespace Ecommerce.Areas.Customer.Controllers
             }
             return View(CartVM);
         }
+        public IActionResult Remove(int serviceId)
+        {
+            List<int> sessionList = new List<int>();
+            sessionList = HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart);
+            sessionList.Remove(serviceId);
+            HttpContext.Session.SetObject(StaticDetails.SessionCart, sessionList);
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Summary()
+        {
+            if (HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart) != null)
+            {
+                List<int> sessionList = new List<int>();
+                sessionList = HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart);
+                foreach (int serviceId in sessionList)
+                {
+                    CartVM.ServiceList.Add(_unitOfWork.service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
+                }
+            }
+            return View(CartVM);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Summary")]
+        public IActionResult SummaryPost()
+        {
+            if (HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart) != null)
+            {
+                List<int> sessionList = new List<int>();
+                sessionList = HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart);
+                foreach (int serviceId in sessionList)
+                {
+                    CartVM.ServiceList.Add(_unitOfWork.service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
+                }
+            }
+            if (!ModelState.IsValid)
+            {
+                return View(CartVM);
+            }
+            else
+            {
+                CartVM.OrderHeader.OrderDate = DateTime.Now;
+                CartVM.OrderHeader.Status = StaticDetails.StatusSubmitted;
+                CartVM.OrderHeader.ServiceCount = CartVM.ServiceList.Count;
+                _unitOfWork.orderHeader.Add(CartVM.OrderHeader);
+                _unitOfWork.save();
+
+                foreach(var item in CartVM.ServiceList)
+                {
+                    OrderDetail od = new OrderDetail
+                    {
+                        ServiceId = item.Id,
+                        OrderHeaderId = CartVM.OrderHeader.Id,
+                        ServiceName = item.Name,
+                        Prices = item.Price
+                    };
+                    _unitOfWork.orderDetail.Add(od);
+                    _unitOfWork.save();
+                }
+                HttpContext.Session.SetObject(StaticDetails.SessionCart, new List<int>());
+                return RedirectToAction("OrderConfirmation", "Cart", new { id = CartVM.OrderHeader.Id });
+            }
+            
+        }
     }
 }
