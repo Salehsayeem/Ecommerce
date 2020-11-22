@@ -9,17 +9,11 @@ namespace Ecommerce.Model
     {
         [Key]
         public int Id { get; set; }
-        [Required]
         public string Name { get; set; }
-        [Required]
         public string Phone { get; set; }
-        [Required]
         public string Email { get; set; }
-        [Required]
         public string Address { get; set; }
-        [Required]
         public string City { get; set; }
-        [Required]
         public string StateZipCode { get; set; }
         public DateTime OrderDate { get; set; }
         public string Status { get; set; }

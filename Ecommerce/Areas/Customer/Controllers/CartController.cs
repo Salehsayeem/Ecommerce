@@ -70,9 +70,10 @@ namespace Ecommerce.Areas.Customer.Controllers
             {
                 List<int> sessionList = new List<int>();
                 sessionList = HttpContext.Session.GetObject<List<int>>(StaticDetails.SessionCart);
+                CartVM.ServiceList = new List<Service>();
                 foreach (int serviceId in sessionList)
                 {
-                    CartVM.ServiceList.Add(_unitOfWork.service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
+                    CartVM.ServiceList.Add(_unitOfWork.service.Get(serviceId));
                 }
             }
             if (!ModelState.IsValid)
@@ -103,6 +104,10 @@ namespace Ecommerce.Areas.Customer.Controllers
                 return RedirectToAction("OrderConfirmation", "Cart", new { id = CartVM.OrderHeader.Id });
             }
             
+        }
+        public IActionResult OrderConfirmation(int id)
+        {
+            return View(id);
         }
     }
 }
